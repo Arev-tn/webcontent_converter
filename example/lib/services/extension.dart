@@ -7,7 +7,7 @@ extension on img.Image {
     int x = 0;
     int y = 0;
     for (var i = 0; i < page; i++) {
-      var image = img.copyCrop(this, x, y, width, width);
+      var image = img.copyCrop(this, height: height, width: width, x: x, y: y);
       images.add(image);
       y += width;
     }
